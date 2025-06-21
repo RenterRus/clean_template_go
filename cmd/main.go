@@ -1,5 +1,7 @@
 package main
 
-func main() {
+import "go_clean/internal/app"
 
+func main() {
+	app.NewApp()
 }
