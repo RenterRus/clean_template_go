@@ -27,9 +27,10 @@ type Config struct {
 	FTP  FTPClient `validate:"required"`
 
 	PathToDB string `validate:"required"`
-	Cache    Server `validate:"required"`
+	NameDB   string `validate:"required"`
+	WorkPath string `validate:"required"`
 
-	EagerMode bool
+	Cache Server `validate:"required"`
 }
 
 func ReadConfig(path string, fileName string) (*Config, error) {

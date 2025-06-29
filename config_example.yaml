@@ -17,11 +17,11 @@ ftp:
     pass: "pass"
     remotedirectory: "/raid/video"
 
-pathtodb: "./db/links.db"
+pathtodb: "./db"
+namedb: "links.db"
+workPath: "/home/user"
 
 cache:
     host: "127.0.0.1"
     port: 9999
     enable: true
-
-eagermode: true

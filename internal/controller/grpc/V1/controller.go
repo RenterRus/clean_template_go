@@ -1,3 +1,12 @@
 package v1
 
-// Тут описываем структуру grpc сервера
+import (
+	proto "go_clean/docs/proto/v1"
+	"go_clean/internal/usecase"
+)
+
+type V1 struct {
+	proto.DownloaderServer
+
+	u usecase.Downloader
+}

@@ -3,6 +3,8 @@ module go_clean
 go 1.23.3
 
 require (
+	github.com/AlekSi/pointer v1.2.0
+	github.com/bradfitz/gomemcache v0.0.0-20250403215159-8d39553ac7cf
 	github.com/go-playground/validator/v10 v10.26.0
 	github.com/spf13/viper v1.20.1
 	google.golang.org/grpc v1.73.0

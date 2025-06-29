@@ -1,3 +1,4 @@
 package usecase
 
-// Контракты для юзкейсов (интерфейсы, типы)
+type Downloader interface {
+}

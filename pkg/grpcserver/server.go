@@ -12,8 +12,6 @@ const (
 	_defaultAddr = ":80"
 )
 
-// В этом пакете настраиваем поведение сервера и прочих коннектов с внешним миром
-
 // Server -.
 type Server struct {
 	App     *pbgrpc.Server
