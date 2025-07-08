@@ -1,4 +1,4 @@
-package v1
+package apiv1
 
 import (
 	proto "go_clean/docs/proto/v1"
