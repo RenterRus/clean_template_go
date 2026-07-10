@@ -17,3 +17,16 @@ install goose:
 
 create migration:
 	@go run github.com/pressly/goose/v3/cmd/goose@latest create create_links sql -dir migration
+
+
+MIGRATIONS_DIR ?= ./migration
+DB_DRIVER ?= postgres
+
+CONN_STR = $(DB_CONNECTION_STR)
+
+migrate-set-conn-str-example:
+	export DB_CONNECTION_STR=postgres://user:password@localhost:5432/dbname?sslmode=disable
+
+migrate-up:
+	echo $(CONN_STR)
+	go run github.com/pressly/goose/v3/cmd/goose@latest -dir $(MIGRATIONS_DIR) $(DB_DRIVER) $(CONN_STR) up
